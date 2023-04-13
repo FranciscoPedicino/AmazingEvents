@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/amazing-events.webp);
+    background-position: center;
+    background-size:cover; 
+    background-repeat: repeat;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.379) ;
+    min-height: 15vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+    background-color: rgba(255, 255, 255, 0.231);
+}   
+.logo-amazing{
+    width: 150px;
+}
+.search-category{
+    min-height: 5rem;
+   
+}
+.cartas{
+  margin-bottom: 2rem; 
+}
+
+.navbar{
+    position: fixed;
+}
+nav ul li a:hover{
+    color: black;
+    background-color: #1fe6e922;
+    border-radius: 5px;
+
+}
+
+nav ul li a {
+    color:#1FE6E9 !important;
+}
+nav .active {
+    background-color: #1FE6E9;
+    border-radius: 5px;
+    padding: 5px 50px;
+    color: black !important;
+}
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+nav {
+    box-shadow: rgba(141, 146, 151, 0.082) 0px 8px 24px;
+    min-height: 7vh;
+}
+.container-fluid{
+    display: flex;
+}
+.img-carta{
+    height: 50%;
+}
+.label-input{
+    color: #1FE6E9;
+    display: flex;
+    flex-direction: column;
+}
+.caja-contacto{
+ 
+width: min-content;
+height: 20rem;
+display: flex;
+
+    
+}
+.div-contacto{
+    width: 100%;
+    height: min-content ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+} 
+.input{
+    width: 18rem;
+
+margin: 2px
+}
+.input1{
+    width: 18rem;
+height: 5rem;
+margin: 2px
+}
+
+h2{
+    display: flex;
+justify-content: center;
+align-items: center;
+    width: 100%;
+    background-color:#056fa8b3;
+    height: 13vh;
+    
+}
+section {
+    width: 100%;   
+}
+.img-ultima{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.646);
+    min-height:15vh; 
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.img-footer{
+    background-size: contain;
+    width: 40px;
+}
+.navbar-toggler-icon{
+    background-color: #1FE6E9;
+}
+
+
+
+.caja-cartas{
+
+    margin-top: 5rem;
+}
+.card-body{
+    justify-content: end !important;
+    background-color: rgba(0, 0, 0, 0.822);
+    border: #1FE6E9 solid 1px;
+    height: min-content;
+     padding-left: 10px!important; 
+   padding-right:10px !important;
+   padding-bottom: 0  !important;
+}
+.price-botton{
+ 
+    height: 8vh;
+    display: flex;
+    align-items: end;
+}
+.botton-card{
+    height: 2rem;
+   
+}
+.card-img-top{
+    border: #1FE6E9 solid 1px;
+}
+.botton-card{
+    
+    text-decoration: none;
+    padding: 2px;
+    background-color: antiquewhite;
+    border:solid black 1px;
+    border-radius: 10px;
+    color: white;
+    background-color: #1fe6e9be;
+}
+.h5-card{
+    color:#1FE6E9;
+}
+table  {
+    border: solid white 2px;
+    width: 100%; 
+}
+thead tr th  {
+    border: solid white 2px;
+}
+tbody tr td{
+    border: solid white 2px;
+}
+
+.h2-stats{
+    width: 100%;
+    color: #1FE6E9;
+ background-color: rgba(0, 0, 0, 0.642);
+margin-bottom: 0;
+margin-top: 5px;
+display: flex;
+justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(8, 103, 186);
+    width: 20rem;
+    text-align: center;
+    height: 10rem;
+}
+.tabla-1{
+    border: solid red 2px;
+    width: 10rem;
+    height: 20rem;
+}
+.tabla-2{
+    border: solid rgb(0, 0, 0) 2px;
+    width: 10rem;
+    height: 20rem;
+}
+ 
+.caja-enviar{
+    display: flex;
+    justify-content: end;
+    width: 20rem;
+}
+
+.contenedor-details{
+    width: 80%;
+    height: 30rem;
+    background-color: rgba(0, 0, 0, 0.368);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.img-details{
+    width: 30vw;
+    height: 20rem;
+    object-fit: cover;
+
+}
+li{
+   
+   margin: 1.5rem;
+}
+.lista-details{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+    border: solid black 2px;
+    width: 45%;
+}
+div h2{
+color: #1FE6E9;
+}
+.li-details{
+    color: white;
+}
+.logo-busqueda{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+.cartas-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.img-cartas-details{
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+
+}
+@media (min-width:320px) and (max-width: 769px){
+    .search-category{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .search{
+        margin-top: 2rem;
+        width: 50%;
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .category{
+        width: 50%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    footer h3{
+        font-size: 10px;
+    }
+    
+.tablacompleta{
+    margin-left: 2rem;
+    }
+    .h2-stats{
+    margin-left: 2rem;
+    }
+    .contenedor-details{
+        flex-direction: column;
+    }
+ 
+    .h2-stats{
+ margin-left: 0;
+    }
+    .caja-contacto{
+      
+height: 20rem;   
+    }
+}
+@media (min-width:320px) and (max-width: 630px){
+    .cartas-card{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+    }
+    .img-cartas-details{
+        height: 10rem;
+        width: 15rem;
+        object-fit: cover;
+        
+        
+    
+    }
+    .lista-details{
+        width: 90%;
+        margin-top: 2rem;
+        height: 18rem;
+        display: flex;
+       
+    }
+    li{
+        margin:0;
+    }
+    .contenedor-details{
+        width: 80%;
+        min-height: 100vw;
+        background-color: rgba(0, 0, 0, 0.368);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width:630px) and (max-width: 909px){
+    .img-cartas-details{
+        height: 10rem;
+        width: 25rem;
+        object-fit: cover;
+    
+}
+.contenedor-details{
+    margin: 0;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.368);
+    margin-bottom: 1rem;
+    display: flex;
+}
+.lista-details{
+    
+    height:15rem;
+  
+    justify-content: space-around;
+        border: solid black 2px;
+        width: 45%;
+    }
+li{
+    margin: 0;
+}
+
+        .cartas-card{
+        display: flex;
+        height: 100vh;
+    }
+}
