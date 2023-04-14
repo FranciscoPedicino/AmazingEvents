@@ -5,8 +5,7 @@
  fetch(url)
  .then(Response => Response.json())
  .then(date =>{
-  let eventos=date.events
-      let evento = eventos 
+  let eventos=date.events 
       let details = location.search
 let params = new URLSearchParams(details)
 let idDetails = params.get("name")

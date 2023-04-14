@@ -5,10 +5,6 @@
 }
 body{
     background-image: url(../images/amazing-events.webp);
-   
-  /*  background-color:#F8F9FA; */
-
-  
 }
 td{
     color: #000000;
@@ -111,10 +107,16 @@ section {
     justify-content: center;
     width: 100%;
 }
+.footer-h2 {
+    color: white;
+    font-size: 16px;
+    border-bottom: solid 1px #1FE6E9;
+
+}
 
 footer{
     background-color: rgb(0, 0, 0);
-    min-height:15vh; 
+    min-height:10vh; 
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -122,13 +124,11 @@ footer{
 
 .img-footer{
     background-size: contain;
-    width: 40px;
+    width: 30px;
 }
 .navbar-toggler-icon{
     background-color: #1FE6E9;
 }
-
-
 
 .caja-cartas{
 
@@ -142,6 +142,9 @@ footer{
      padding-left: 10px!important; 
    padding-right:10px !important;
    padding-bottom: 0  !important;
+}
+.tabla-3{
+    margin-bottom: 1rem;
 }
 .price-botton{
  
@@ -179,13 +182,23 @@ thead tr th  {
 tbody tr td{
     border: solid rgb(0, 0, 0) 2px;
 }
+.h2-stats-statistics{
+    width: 100%;
+    color: white;
+ background-color:#1FE6E9;
+margin-bottom: 0;
+display: flex;
+justify-content: center;
+margin-top: 2rem;
+
+}
+
 
 .h2-stats{
     width: 100%;
     color: white;
  background-color:#1FE6E9;
 margin-bottom: 0;
-margin-top: 5px;
 display: flex;
 justify-content: center;
 }
@@ -267,14 +280,13 @@ color: #1FE6E9;
     object-fit: cover;
 }
 .categorias-j{
-    
+   
     margin-left: 1rem;
 }
 .caja-categorias{
     margin-top: 1rem;
      padding: 4px; 
     margin: 1px;
-    /* background-color: #1fe6e988; */
     border-radius: 1rem;
     height: 30%;
   
@@ -334,9 +346,14 @@ body::-webkit-scrollbar {
     .search-category{
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
+
+        flex-wrap: wrap;
+        height: 70vh;
     }
+   
     .search{
+       
         margin-top: 2rem;
         width: 50%;
         display: flex;
@@ -345,9 +362,10 @@ body::-webkit-scrollbar {
         align-items: center;
     }
     .category{
-        width: 50%;
-        flex-direction: column;
-        gap: 2rem;
+        width: 20%;
+        flex-wrap: wrap;
+        margin: 4px;
+        
     }
     footer h3{
         font-size: 10px;

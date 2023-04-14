@@ -3,20 +3,16 @@ fetch(url)
 .then(Response => Response.json())
 .then( date =>{
   let eventos=date.events
-  console.log(eventos);
+  console.log(eventos)
   function generarTabla() {
     const primeraTabla = document.getElementById("primer-tabla")
     let  eventoPasado= []
     let eventosFuturos = []
-
-    let eventosAsistencia = [];
+    let eventosAsistencia = []
 
     for (let evento of eventos) {
       if (evento.date < date.currentDate && evento.capacity) {
         let porcentajeAsistencia = (evento.assistance / evento.capacity) * 100;
-        console.log(porcentajeAsistencia)
-
-
         const eventoAsistencia = {
           nombre: evento.name,
           asistencia: porcentajeAsistencia,
@@ -32,7 +28,6 @@ fetch(url)
      let resultado = ((evento.assistance* 100))/evento.capacity.toFixed(1)
      listaporcentajePasado.push({nombre: evento.name,resultado: resultado})
   })
-  console.log(listaporcentajePasado);
     const eventoMayorAsistencia = listaporcentajePasado.sort((a, b) => {
       if(a.resultado == b.resultado){
         return 0
@@ -43,7 +38,6 @@ fetch(url)
         1
       }
     })
-    console.log(eventoMayorAsistencia);
     const eventoMenorAsistencia = listaporcentajePasado.sort((a, b) => {
       if(a.resultado == b.resultado){
         return 0
@@ -54,18 +48,12 @@ fetch(url)
         1
       }
     })
-    
-    
-
-  
-  
   let mayorAforo = eventos[0];
   for (let i = 1; i < eventos.length; i++) {
     if (eventos[i].capacity > mayorAforo.capacity) {
       mayorAforo = eventos[i];
     }
   }
-
   let tabla1 = "";
   tabla1 += `
         <table>
@@ -84,13 +72,10 @@ fetch(url)
             </tr>
           </tbody>
         </table>
-      `;
-
-  primeraTabla.innerHTML = tabla1;
+      `
+  primeraTabla.innerHTML = tabla1
   }
   generarTabla() 
-  
- 
     function generarTabla2() {
       const segundaTabla = document.getElementById(`tabla2`)
       const eventosFuturos = eventos.filter(evento => evento.date > date.currentDate)
@@ -106,7 +91,7 @@ fetch(url)
           </tr>
         </thead>
         <tbody>`
-        
+        //filtro los eventos futuros con su categoria y pinto la tabla
       for (let categoria of categoriasUnicas) {
         const eventosCategoria = eventosFuturos.filter(evento => evento.category === categoria)
         let totalIngreso = 0
@@ -120,7 +105,7 @@ fetch(url)
 
         tabla2 += `
           <tr>
-            <td> ${categoria} </td>+
+            <td> ${categoria}</td>
             <td> ${totalIngreso} </td>
             <td> ${porcentajeAsistencia}% </td>
           </tr>`
@@ -140,7 +125,7 @@ fetch(url)
       const categoriasUnicas = [...new Set(eventosPasados.map(evento => evento.category))]
       
       let tabla3 =``
-      tabla3+= `<table>
+      tabla3+= `<table class="tabla-3">
         <thead>
           <tr>
             <th> Categories </th>
@@ -149,6 +134,7 @@ fetch(url)
           </tr>
         </thead>
         <tbody>`
+        //filtro los eventos pasados  con su categoria y pinto la tabla
         
       for (let categoria of categoriasUnicas) {
         const eventosCategoria = eventosPasados.filter(evento => evento.category === categoria)
@@ -158,8 +144,8 @@ fetch(url)
             totalIngreso += evento.assistance * evento.price
             totalAsistencia += evento.assistance
 }
+//calculo el porcentaje de asistencias al evento con su categoria
 const porcentajeAsistencia = ((totalAsistencia / eventosCategoria.reduce((total, evento) => total + evento.capacity, 0)) * 100).toFixed(1)
-
         tabla3+= `
           <tr>
             <td> ${categoria} </td>
@@ -167,11 +153,9 @@ const porcentajeAsistencia = ((totalAsistencia / eventosCategoria.reduce((total,
             <td> ${porcentajeAsistencia}% </td>
           </tr>`
       }
-      
       tabla3 += `
         </tbody>
       </table>`
-      
       terceraTabla.innerHTML = tabla3
     }
     generarTabla3()

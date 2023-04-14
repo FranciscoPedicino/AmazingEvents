@@ -11,7 +11,6 @@ fetch(url)
         (eventosFuturos .push(evento))
     }
 } 
-
 let cards = ``
 
 for(let i=0;i<eventosFuturos .length;i++){

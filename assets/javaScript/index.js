@@ -1,6 +1,4 @@
   const $contenedor = document.getElementById(`contenedor-eventos`)
-
-
 const url=` https://mindhub-xj03.onrender.com/api/amazing`
 fetch(url)
 .then(Response => Response.json())
@@ -16,11 +14,12 @@ $contenedor.innerHTML=cards
 
 const contenedorCategorias=document.getElementById(`contenedor-categorias`)
 const categorias=eventos.map(evento=>evento.category)
+ //capturo las categorias no repetidas
 const  listaCategorias=[...new Set (categorias)]
 
 let buscador = document.getElementById('contenedor-buscador')
-crearCategorias(listaCategorias,contenedorCategorias)
 
+crearCategorias(listaCategorias,contenedorCategorias)
 buscador.addEventListener('input', () => {
     let busqueda = buscador.value.toLowerCase()
     let categoriasElegidas = Array.from(document.querySelectorAll('input[id=checkbox]:checked')).map(valorCategoria => valorCategoria.value);

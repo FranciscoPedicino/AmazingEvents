@@ -60,7 +60,7 @@ contenedorCategorias.addEventListener(`change`, () => {
     }
     document.getElementById('contenedor-eventos').innerHTML = cards
 }) 
- })
+})
 .catch(err => console.log(err)) 
 import { crearCartasUyP,crearCategorias } from "../../module/funciones.js"
 
