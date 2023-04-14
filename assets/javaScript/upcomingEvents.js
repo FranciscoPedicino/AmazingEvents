@@ -7,7 +7,7 @@ fetch(url)
     let eventos=date.events
     let eventosFuturos =[]
     for (let  evento of eventos) {
-    if (evento.date<date.currentDate){
+    if (evento.date>date.currentDate){
         (eventosFuturos .push(evento))
     }
 } 

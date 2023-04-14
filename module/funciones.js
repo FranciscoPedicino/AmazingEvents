@@ -27,17 +27,11 @@ export function crearCartasUyP(evento){
 export function crearCategorias(categorias,contenedorCategorias){
     let template=``
     for(let categoria of categorias){
-        template+=`<div>
-        <label class=" text-white justify-content-around" for="festival">${categoria} </label>
+        template+=`<div class="caja-categorias">
+        <label class=" categorias-j justify-content-around" for="festival">${categoria} </label>
         <input type="checkbox" name="categoriaelegida" id="checkbox" value="${categoria}">
         </div>
         `
     }
     contenedorCategorias.innerHTML=template
 }
-
- 
-
-
-
-

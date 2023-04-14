@@ -5,11 +5,11 @@ const url=` https://mindhub-xj03.onrender.com/api/amazing`
 fetch(url)
 .then(Response => Response.json())
 .then(date =>{
-      let eventos=date.events
-      let evento = eventos 
-      let cards = ``
+    let eventos=date.events
+    let evento = eventos 
+    let cards = ``
 for ( evento of eventos) {
-      cards += crearCartas(evento)
+    cards += crearCartas(evento)
 }
 
 $contenedor.innerHTML=cards
