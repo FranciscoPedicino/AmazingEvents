@@ -29,7 +29,7 @@ export function crearCategorias(categorias,contenedorCategorias){
     for(let categoria of categorias){
         template+=`<div class="caja-categorias">
         <label class=" categorias-j justify-content-around" for="festival">${categoria} </label>
-        <input type="checkbox" name="categoriaelegida" id="checkbox" value="${categoria}">
+        <input type="checkbox" name="categoriaelegida" id="checkbox"  value="${categoria}">
         </div>
         `
     }
