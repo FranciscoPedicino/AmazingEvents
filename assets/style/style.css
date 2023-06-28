@@ -194,6 +194,9 @@ margin-bottom: 0;
 display: flex;
 justify-content: center;
 margin-top: 2rem;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
 
 }
 
@@ -345,6 +348,7 @@ body::-webkit-scrollbar {
     background-image: url(../images/amazing-events.webp);
 
 }
+
 
 @media (min-width:320px) and (max-width: 769px){
     .search-category{
