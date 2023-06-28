@@ -199,6 +199,19 @@ border-top-right-radius: 20px;
 
 
 }
+.caja-stats{
+
+}
+.fondo-stats{
+    height: 60px;
+    width: 100%;
+    background-color: #1FE6E9;
+    position: relative;
+    bottom: 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+
+}
 
 
 .h2-stats{
