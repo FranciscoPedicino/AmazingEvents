@@ -42,6 +42,10 @@ main{
 nav ul li a {
     color:#000000 !important;
 }
+.f1{
+    color:#1FE6E9 !important;
+ 
+}
 nav a{
     border-bottom: solid 1px #1FE6E9;
 }
